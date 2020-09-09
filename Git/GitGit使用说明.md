@@ -1,5 +1,10 @@
+<<<<<<< HEAD:Git/Git使用方法.md
 ## __Git使用方法__
+=======
+## Git使用说明 
+>>>>>>> 12506027cae08e18812ec1cb116536ee0154ff03:Git/GitGit使用说明.md
 
+Git一种复杂的版本控制系统，这篇文章有助于大家快速上手使用Git。  
 
 * ### 基础
 
@@ -12,16 +17,20 @@ git init       // 初始化当前目录
 ```
 使用我们指定目录作为Git仓库。
 ```
+<<<<<<< HEAD:Git/Git使用方法.md
+git init repo
+=======
 git init repo  // 初始化使用指定目录
+>>>>>>> 12506027cae08e18812ec1cb116536ee0154ff03:Git/GitGit使用说明.md
 ```
 #### 添加
 
 新建的仓库是空目录，可以使用add命令添加文件。
 
 ```
-mkdir repo     // 新建目录
-git add file   // 添加文件
-git add .      // 添加所有文件
+mkdir repo         // 新建目录
+git add filename   // 添加文件
+git add .          // 添加所有文件
 ```
 #### __删除__
 如何你想从资源库中删除文件，我们使用rm。
@@ -29,14 +38,15 @@ git add .      // 添加所有文件
 git rm file
 ```
 #### 提交
-添加了这些文件后，还将它们提交到仓库。
+
+添加的文件只是储存在缓冲区，还将它们提交到仓库。
 ```
 git commit -m "Adding files"
 ```
 如果您不使用-m，会出现编辑器来让你写自己的注释信息。
 当我们修改了很多文件，可以使用-a标识。
 ```
-git commit -am "Adding files"
+git commit -am "Changed some files"
 ```
 
 
