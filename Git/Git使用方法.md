@@ -1,7 +1,7 @@
 ## __Git使用方法__
 
 
-* ### 基础
+### __基础__
 
 #### 初始化
 
@@ -23,10 +23,23 @@ mkdir repo     // 新建目录
 git add file   // 添加文件
 git add .      // 添加所有文件
 ```
-#### __删除__
+#### 删除
 如何你想从资源库中删除文件，我们使用rm。
 ```
 git rm file
+```
+#### 移动
+如何你想从资源库中删除文件，我们使用rm。
+```
+git mv [file] [newfile]
+```
+#### 比较
+如何你想从资源库中删除文件，我们使用rm。
+```
+git diff [file]
+git diff --cached [file]
+git diff --staged [file]
+git diff [first-branch] [second-branch]
 ```
 #### 提交
 添加了这些文件后，还将它们提交到仓库。
@@ -40,8 +53,8 @@ git commit -am "Adding files"
 ```
 
 
-* ### 进阶
-* 
+### __进阶__
+
 ####  仓库
 显示远程仓库
 ```
@@ -80,6 +93,24 @@ git blame <file>
 git reset --hard HEAD
 git reset --hard 1094a
 ```
+#### 获取
+从远程获取代码库。
+```
+git fetch [alias]
+git merge [alias]/[branch]
+```
+#### 合并
+从远端仓库提取数据并尝试合并到当前分支
+```
+git merge
+```
+git pull 其实就是 git fetch 和 git merge FETCH_HEAD 的简写
+```
+git pull
+git pull origin
+git pull origin master
+git pull origin master:brantest
+```
 
 #### 状态
 通过命令可以查看当前状态
@@ -87,7 +118,7 @@ git reset --hard 1094a
 git status
 ```
 
-* ### 进阶
+### __环境__
 
 ####  配置
 
@@ -112,6 +143,20 @@ git config --global merge.tool vimdiff
 ####  查看配置
 ```
 git config --list
-
 git config user.name
+git config user.email
+```
+####  密钥
+生成 SSH 公钥
+
+```
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+验证密钥
+```
+ssh -T git@github.com
+```
+查看公钥
+```
+cat ~/.ssh/id_rsa.pub
 ```
