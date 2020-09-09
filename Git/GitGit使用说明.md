@@ -1,5 +1,6 @@
-## Git使用方法
+## Git使用说明 
 
+Git一种复杂的版本控制系统，这篇文章有助于大家快速上手使用Git。  
 
 * ### 基础
 
@@ -7,17 +8,18 @@
 
 使用Git前，需要先建立一个仓库(repository)。
 ```
-git init
+git init       // 初始化当前目录
 ```
 使用我们指定目录作为Git仓库。
 ```
-git init newrepo
+git init repo  // 初始化使用指定目录
 ```
 #### 添加
 新建的仓库是空目录，可以使用add命令添加文件。
 ```
-git add filename
-git add .
+mkdir repo         // 新建目录
+git add filename   // 添加文件
+git add .          // 添加所有文件
 ```
 #### 删除
 如何你想从资源库中删除文件，我们使用rm。
@@ -25,7 +27,8 @@ git add .
 git rm file
 ```
 #### 提交
-添加了这些文件后，还将它们提交到仓库。
+
+添加的文件只是储存在缓冲区，还将它们提交到仓库。
 ```
 git commit -m "Adding files"
 ```
