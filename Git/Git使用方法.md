@@ -1,25 +1,28 @@
-## Git使用方法
+## __Git使用方法__
 
 
 * ### 基础
 
 #### 初始化
 
-使用Git前，需要先建立一个仓库(repository)。
+使用Git前，需要先建立一个仓库。
+
 ```
 git init
 ```
 使用我们指定目录作为Git仓库。
 ```
-git init newrepo
+git init repo
 ```
 #### 添加
+
 新建的仓库是空目录，可以使用add命令添加文件。
+
 ```
 git add filename
 git add .
 ```
-#### 删除
+#### __删除__
 如何你想从资源库中删除文件，我们使用rm。
 ```
 git rm file
@@ -37,7 +40,25 @@ git commit -am "Changed some files"
 
 
 * ### 进阶
-
+* 
+####  仓库
+显示远程仓库
+```
+git remote show [remote]
+git remote -v
+```
+添加远程仓库
+```
+git remote add [shortname] [url]
+```
+修改仓库名
+```
+git remote rename old_name new_name
+```
+删除远程仓库
+```
+git remote rm name
+```
 ####  发布
 修改完成后可以进行推送到服务器。
 
@@ -49,6 +70,7 @@ git push ssh://example.com/demo/project.git
 版本控制系统包含了历史记录
 ```
 git log
+git blame <file>
 ```
 
 #### 回退
@@ -62,4 +84,33 @@ git reset --hard 1094a
 通过命令可以查看当前状态
 ```
 git status
+```
+
+* ### 进阶
+
+####  配置
+
+配置个人的用户名称和电子邮件地址。
+```
+git config --global user.name "coker"
+git config --global user.email ldh0sky@sina.com
+```
+
+配置默认文本编辑器
+
+```
+git config --global core.editor vim
+```
+
+配置差异分析工具
+
+```
+git config --global merge.tool vimdiff
+```
+
+####  查看配置
+```
+git config --list
+
+git config user.name
 ```
