@@ -150,7 +150,7 @@ git config user.email
 生成 SSH 公钥
 
 ```
-ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+ssh-keygen -t rsa -b 4096 -C "ldh0sky@sina.com"
 ```
 验证密钥
 ```
@@ -159,4 +159,8 @@ ssh -T git@github.com
 查看公钥
 ```
 cat ~/.ssh/id_rsa.pub
+```
+记住密码
+```
+git config --global credential.helper store
 ```
