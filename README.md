@@ -7,7 +7,7 @@
 
 * Git
 * [vim](#jump ) 
-* [vim](#1. vim配置)
+* [1. vim配置](#jump)
 * WindowsTerminal
 
 
