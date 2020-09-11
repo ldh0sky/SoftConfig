@@ -30,7 +30,7 @@ git clone git@github.com:ldh0sky/SoftConfig.git
 #### git配置
 使用.gitconfig文件用来配置git
 ~~~
-cp ~/.gitconfig .gitconfig.orig
+cp ~/.gitconfig ~/.gitconfig.orig
 cp ./SoftConfig/git/.gitconfig ~/.gitconfig
 ~~~
 
@@ -41,7 +41,7 @@ cp ./SoftConfig/git/.gitconfig ~/.gitconfig
 使用.vimrc文件用来配置vim 
 
 ~~~
-cp ~/.vimrc .vimrc.orig
+cp ~/.vimrc ~/.vimrc.orig
 cp ./SoftConfig/vim/.vimrc ~/.vimrc
 ~~~
 
@@ -50,7 +50,7 @@ cp ./SoftConfig/vim/.vimrc ~/.vimrc
 使用settings.json文件用来配置WindowsTerminal
 
 ~~~
-cp ~/.vimrc .vimrc.orig
+cp ~/settings.json settings.json.orig
 cp ./SoftConfig/json文件用来配置WindowsTerminal/settings.json ~/settings.json
 ~~~
 
