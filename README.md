@@ -22,8 +22,7 @@ git clone git@github.com:ldh0sky/SoftConfig.git
 
 - [git](#git配置) 
 - [vim](#vim配置)
-- WindowsTerminal
-- 
+- [WindowsTerminal](#WindowsTerminal配置)
 
 ##  修改软件配置
 
@@ -47,11 +46,12 @@ cp ./SoftConfig/vim/.vimrc ~/.vimrc
 
 ------
 
+###  WindowsTerminal配置
 使用settings.json文件用来配置WindowsTerminal
 
 ~~~
 cp ~/settings.json settings.json.orig
-cp ./SoftConfig/json文件用来配置WindowsTerminal/settings.json ~/settings.json
+cp ./SoftConfig/WindowsTerminal/settings.json ~/settings.json
 ~~~
 
 ------
